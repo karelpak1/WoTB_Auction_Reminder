@@ -8,7 +8,6 @@ import zipfile
 from datetime import datetime
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
-#url = "https://eu.wotblitz.com/en/auction/#/"
 url = "https://eu.wotblitz.com/en/api/events/items/auction/?page_size=50&type[]=vehicle&saleable=true"
 #url = "https://tanksblitz.ru/ru/api/events/items/auction/?page_size=50&type[]=vehicle&saleable=true" # For TanksBlitz
 webhookURL = "Your Webhook URL"
@@ -54,7 +53,6 @@ async def getNumberofTanks():
             json.dump(json_object, outfile)
         outfile.close()
 
-        #Create zip archive, if it doesn't exist and add the file to it
         if not os.path.exists('./log/log.zip'):
             with zipfile.ZipFile('./log/log.zip', 'w') as myzip:
                 myzip.write('./log/' + dt_string + '.json')
@@ -87,7 +85,6 @@ async def compareForChanges():
     old = "./data_old.json"
     new = "./data.json"
 
-    # if data_old.json doesn't exist, create it
     if not os.path.exists(old):
         f = open(old, "w")
         f.write("{}")
