@@ -1,7 +1,7 @@
 # WoT Blitz Auction Reminder
 Tired of always looking at Wargaming's auction site? Need to know when rare tanks are on sale?
 
-!(https://media.discordapp.net/attachments/771009435573026846/1057963993337172019/image.png)
+![Screen of message](https://media.discordapp.net/attachments/771009435573026846/1057963993337172019/image.png)
 
 ## How to use
 
